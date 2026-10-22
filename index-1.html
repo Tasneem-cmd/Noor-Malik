@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffe3e6">
+<title>Happy Birthday, Noor 🎂</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="balloons" aria-hidden="true">
+  <i style="--x:6%;--c:#f4829a;--d:9s;--t:0s"></i><i style="--x:24%;--c:#ffb48f;--d:11s;--t:-3s"></i>
+  <i style="--x:46%;--c:#e8576f;--d:10s;--t:-6s"></i><i style="--x:68%;--c:#ffc9d3;--d:12s;--t:-2s"></i>
+  <i style="--x:86%;--c:#ffb48f;--d:9.5s;--t:-5s"></i>
+</div>
+<canvas id="fx" aria-hidden="true"></canvas>
+
+<main id="app">
+
+<section class="scene active" id="s1" aria-labelledby="t1">
+  <button class="gift small" id="gift1" aria-label="A closed gift box" tabindex="-1">
+    <span class="lid"><b class="bow"></b></span><span class="box"></span>
+  </button>
+  <h1 id="t1" class="big">Hey, Noor Malik. 👀</h1>
+  <p class="line">Sooo... someone just turned 23. 🎂</p>
+  <p class="line">I have something for you, Aunty. 😂</p>
+  <button class="btn" data-go="2">Open it, don't be shy →</button>
+</section>
+
+<section class="scene" id="s2" aria-labelledby="t2">
+  <h2 id="t2" class="big" style="font-size:clamp(1.7rem,8vw,2.6rem)">HAPPY 23rd BIRTHDAY, NOOR! 🎉</h2>
+  <p class="line">Congratulations, Aunty. You're officially getting older. 😂❤️</p>
+  <div class="cake" id="cake">
+    <div class="candles" id="candles"></div>
+    <svg viewBox="0 0 260 150" role="img" aria-label="Birthday cake">
+      <ellipse cx="130" cy="140" rx="125" ry="9" fill="#f3c6cd"/>
+      <rect x="25" y="70" width="210" height="68" rx="14" fill="#ffd9c2"/>
+      <rect x="55" y="22" width="150" height="52" rx="12" fill="#ffb8c6"/>
+      <path d="M55 40q12 20 25 0t25 0 25 0 25 0 25 0v-8q0-10-10-10H65q-10 0-10 10z" fill="#fff7ee"/>
+      <path d="M25 92q14 18 27 0t27 0 27 0 27 0 27 0 27 0 27 0 21 0v-16H25z" fill="#fff7ee"/>
+      <circle cx="75" cy="108" r="6" fill="#e8576f"/><circle cx="130" cy="112" r="6" fill="#e8576f"/><circle cx="185" cy="108" r="6" fill="#e8576f"/>
+      <circle cx="105" cy="58" r="4" fill="#e8576f"/><circle cx="155" cy="58" r="4" fill="#e8576f"/>
+    </svg>
+  </div>
+  <p class="hint" id="hint2" aria-live="polite">Tap each candle to blow it out 💨</p>
+  <button class="btn" id="next2" data-go="3" hidden>Okay, what's next? 👀</button>
+</section>
+
+<section class="scene" id="s3" aria-label="A little conversation">
+  <div class="chat" id="chat" aria-live="polite">
+    <p class="bubble show">Aunty, ek baat poochun? 👀</p>
+    <p class="bubble" id="m2">19 October ko kisi ka birthday tha... 👀 Usko wish toh mil gayi, lekin gift nahi mila. 😂🎁</p>
+    <p class="typing" id="typing" aria-hidden="true"><i></i><i></i><i></i></p>
+    <p class="bubble punch" id="m3">Khair, aaj tumhara din hai. Ab batao... mera gift kidhar hai, Aunty? 😭😂</p>
+  </div>
+  <button class="btn" id="ask">Haan, poochho 😂</button>
+  <button class="btn" id="next3" data-go="4" hidden>Achha bas bas, birthday girl ko celebrate karo 😂❤️</button>
+</section>
+
+<section class="scene" id="s4" aria-labelledby="t4">
+  <h2 id="t4" class="big" style="font-size:clamp(1.7rem,8vw,2.4rem)">One more surprise, Noor 🎁</h2>
+  <button class="gift" id="gift4" aria-label="Tap to open the gift">
+    <span class="lid"><b class="bow"></b></span><span class="box"></span><span class="glow">💌</span>
+  </button>
+  <p class="hint" id="hint4">Tap the gift to open it</p>
+  <p class="line" id="found4" hidden>A birthday wish, made just for you. ✨</p>
+  <button class="btn" id="next4" data-go="5" hidden>Read it ❤️</button>
+</section>
+
+<section class="scene" id="s5" aria-labelledby="t5">
+  <div class="hearts" aria-hidden="true"><i>❤</i><i>✨</i><i>❤</i><i>✨</i><i>❤</i></div>
+  <article class="letter">
+    <h2 id="t5">Dear Noor,</h2>
+    <p>Wishing you the happiest 23rd birthday. May this new year of your life be gentle with you, and full of reasons to smile.</p>
+    <p><strong>Ya Allah,</strong> bless Noor with happiness that lasts, good health, success in everything she works for, peace in her heart, and goodness in every step of her life. Ameen. 🤲</p>
+    <p class="sign">Happy Birthday once again, Noor Malik. ❤️🎂</p>
+  </article>
+  <button class="btn" id="replay">Replay the surprise ↺</button>
+</section>
+
+</main>
+<script src="script.js"></script>
+</body>
+</html>
